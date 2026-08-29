@@ -5,11 +5,19 @@ vibrant color gradients, glassmorphism cards, and interactive prediction tools.
 """
 
 import os
+import sys
 import json
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+
+# ── Fix Python path so `src` package is importable on Streamlit Cloud ──────────
+# app/app.py lives at <REPO_ROOT>/app/app.py
+# We need <REPO_ROOT> on sys.path so `from src.predict import ...` works.
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
 
 # Page Configuration
 st.set_page_config(
@@ -19,10 +27,10 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Paths
-MODEL_PATH = os.path.join("models", "final_model.pkl")
-METADATA_PATH = os.path.join("models", "model_metadata.json")
-FIGURES_DIR = os.path.join("reports", "figures")
+# Paths — always absolute so Streamlit Cloud resolves them correctly
+MODEL_PATH = os.path.join(ROOT_DIR, "models", "final_model.pkl")
+METADATA_PATH = os.path.join(ROOT_DIR, "models", "model_metadata.json")
+FIGURES_DIR = os.path.join(ROOT_DIR, "reports", "figures")
 
 
 @st.cache_resource
