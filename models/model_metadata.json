@@ -1,0 +1,118 @@
+{
+    "best_model_name": "Tuned XGBoost (Balanced)",
+    "optimal_threshold": 0.4676991105079651,
+    "metrics": {
+        "Accuracy": 0.674237047551455,
+        "Precision": 0.5098039215686274,
+        "Recall": 0.8227848101265823,
+        "F1-Score": 0.6295399515738499,
+        "ROC-AUC": 0.7656840181412035
+    },
+    "feature_names": [
+        "tenure",
+        "MonthlyCharges",
+        "TotalCharges",
+        "gender_Male",
+        "SeniorCitizen_1",
+        "Partner_Yes",
+        "Dependents_Yes",
+        "PhoneService_Yes",
+        "MultipleLines_No phone service",
+        "MultipleLines_Yes",
+        "InternetService_Fiber optic",
+        "InternetService_No",
+        "OnlineSecurity_No internet service",
+        "OnlineSecurity_Yes",
+        "OnlineBackup_No internet service",
+        "OnlineBackup_Yes",
+        "DeviceProtection_No internet service",
+        "DeviceProtection_Yes",
+        "TechSupport_No internet service",
+        "TechSupport_Yes",
+        "StreamingTV_No internet service",
+        "StreamingTV_Yes",
+        "StreamingMovies_No internet service",
+        "StreamingMovies_Yes",
+        "Contract_One year",
+        "Contract_Two year",
+        "PaperlessBilling_Yes",
+        "PaymentMethod_Credit card (automatic)",
+        "PaymentMethod_Electronic check",
+        "PaymentMethod_Mailed check"
+    ],
+    "top_features": {
+        "Contract_Two year": 0.33611661195755005,
+        "Contract_One year": 0.18229742348194122,
+        "tenure": 0.14454984664916992,
+        "InternetService_Fiber optic": 0.06850894540548325,
+        "TotalCharges": 0.02772112935781479,
+        "MultipleLines_Yes": 0.025626501068472862,
+        "MonthlyCharges": 0.022466087713837624,
+        "StreamingMovies_Yes": 0.022159988060593605,
+        "PaperlessBilling_Yes": 0.020912721753120422,
+        "SeniorCitizen_1": 0.020426664501428604,
+        "Dependents_Yes": 0.020059634000062943,
+        "DeviceProtection_Yes": 0.019432421773672104,
+        "PhoneService_Yes": 0.018715497106313705,
+        "PaymentMethod_Mailed check": 0.01810491271317005,
+        "StreamingTV_Yes": 0.017927225679159164
+    },
+    "all_model_results": [
+        {
+            "Accuracy": 0.6983676366217175,
+            "Precision": 0.5682451253481894,
+            "Recall": 0.43037974683544306,
+            "F1-Score": 0.4897959183673469,
+            "ROC-AUC": 0.7563708567431577,
+            "Model": "Logistic Regression"
+        },
+        {
+            "Accuracy": 0.7026259758694109,
+            "Precision": 0.6086956521739131,
+            "Recall": 0.32489451476793246,
+            "F1-Score": 0.4236588720770289,
+            "ROC-AUC": 0.7365103003226607,
+            "Model": "Decision Tree"
+        },
+        {
+            "Accuracy": 0.7012065294535131,
+            "Precision": 0.5846645367412141,
+            "Recall": 0.3860759493670886,
+            "F1-Score": 0.4650571791613723,
+            "ROC-AUC": 0.7292402806922538,
+            "Model": "Random Forest"
+        },
+        {
+            "Accuracy": 0.7040454222853088,
+            "Precision": 0.5855855855855856,
+            "Recall": 0.41139240506329117,
+            "F1-Score": 0.483271375464684,
+            "ROC-AUC": 0.7679200794241747,
+            "Model": "Gradient Boosting"
+        },
+        {
+            "Accuracy": 0.674237047551455,
+            "Precision": 0.5194805194805194,
+            "Recall": 0.4219409282700422,
+            "F1-Score": 0.46565774155995343,
+            "ROC-AUC": 0.7110347706401318,
+            "Model": "XGBoost"
+        },
+        {
+            "Accuracy": 0.6728176011355571,
+            "Precision": 0.509142053445851,
+            "Recall": 0.7637130801687764,
+            "F1-Score": 0.6109704641350211,
+            "ROC-AUC": 0.7560402987432027,
+            "Model": "Tuned Random Forest (Balanced)"
+        },
+        {
+            "Accuracy": 0.6855926188786373,
+            "Precision": 0.5217391304347826,
+            "Recall": 0.7848101265822784,
+            "F1-Score": 0.6267902274641954,
+            "ROC-AUC": 0.7656840181412035,
+            "Model": "Tuned XGBoost (Balanced)"
+        }
+    ]
+}
