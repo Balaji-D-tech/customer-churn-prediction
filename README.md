@@ -34,7 +34,7 @@ This project implements a leakage-free Machine Learning classification pipeline 
 
 ## 🏆 Real Model Evaluation Benchmark Results
 
-All metrics were computed on the held-out 20% test dataset (1,409 customer records) from an actual execution run:
+All metrics below were produced by executing model training on the held-out 20% test dataset (1,409 customer records) from an actual execution run:
 
 | Machine Learning Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -105,7 +105,7 @@ customer-churn-prediction/
 
 ### 1. Clone Repository & Navigate to Directory
 ```bash
-git clone https://github.com/your-username/customer-churn-prediction.git
+git clone https://github.com/Balaji-D-tech/customer-churn-prediction.git
 cd customer-churn-prediction
 ```
 
@@ -140,10 +140,10 @@ Open your browser at `http://localhost:8501`.
 
 ## 🌐 Deployment Guide (Streamlit Community Cloud)
 
-1. Push your repository to GitHub.
+1. Push your repository to GitHub (`https://github.com/Balaji-D-tech/customer-churn-prediction`).
 2. Visit [share.streamlit.io](https://share.streamlit.io/) and log in with GitHub.
 3. Click **New app**.
-4. Select repository: `customer-churn-prediction`.
+4. Select repository: `Balaji-D-tech/customer-churn-prediction`.
 5. Set Main file path: `app/app.py`.
 6. Click **Deploy!**
 
