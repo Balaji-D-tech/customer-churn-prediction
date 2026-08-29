@@ -6,7 +6,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.62-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Complete 100-Mark Academic Machine Learning Project**  
+
 > An end-to-end, production-ready predictive analytics system for telecommunications customer churn identification, real-time risk assessment, and automated retention recommendations.
 
 ---
